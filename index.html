@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#061438">
+    <meta name="description" content="Una página hecha con cariño, solo para Angy.">
+    <title>Angy Anahi · Para ti</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23061438'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23c9a96e' font-family='serif' font-style='italic'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="preload" href="fonts/GreatVibes.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+    <noscript><style>.portada{display:none!important}.revelar,.entrada{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+</head>
+<body>
+
+    <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.86l11-6.8a1 1 0 0 0 0-1.72l-11-6.8A1 1 0 0 0 8 5.2z" fill="currentColor"/></symbol>
+            <symbol id="i-pausa" viewBox="0 0 24 24"><rect x="6" y="5" width="4.2" height="14" rx="1.4" fill="currentColor"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.4" fill="currentColor"/></symbol>
+            <symbol id="i-spotify" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm4.8 15.15a.65.65 0 0 1-.9.22c-2.46-1.5-5.55-1.84-9.2-1.01a.65.65 0 1 1-.29-1.27c3.99-.91 7.4-.52 10.17 1.16.31.19.41.59.22.9zm1.28-2.85a.82.82 0 0 1-1.13.27c-2.82-1.73-7.11-2.24-10.44-1.22a.82.82 0 1 1-.48-1.57c3.8-1.15 8.53-.59 11.78 1.4.38.23.5.74.27 1.12zm.11-2.97C14.8 8.8 9.3 8.6 6.13 9.57a.98.98 0 1 1-.57-1.88c3.64-1.1 9.7-.89 13.53 1.39a.98.98 0 0 1-1 1.69z"/></symbol>
+        </defs>
+    </svg>
+
+    <!-- Portada -->
+    <div class="portada" id="portada" role="dialog" aria-label="Portada">
+        <div class="portada-estrellas" aria-hidden="true"></div>
+        <div class="portada-contenido">
+            <p class="portada-sup">Hecho para ti</p>
+            <h2 class="portada-titulo">Angy</h2>
+            <span class="portada-linea" aria-hidden="true"></span>
+            <button class="portada-boton" id="abrir" type="button">Abrir</button>
+        </div>
+    </div>
+
+    <div class="progreso-scroll" id="progresoScroll" aria-hidden="true"></div>
+
+    <main id="contenido">
+
+        <!-- Inicio -->
+        <header class="hero" id="inicio">
+            <div class="estrellas" id="estrellas" aria-hidden="true"></div>
+            <div class="hero-texto">
+                <p class="sobretitulo entrada" style="--i:0">Para ti, con todo mi cariño</p>
+                <h1 class="titulo-principal">
+                    <span class="linea entrada" style="--i:1">Bienvenida</span>
+                    <span class="linea nombre entrada" style="--i:2">Angy</span>
+                </h1>
+                <span class="linea-oro entrada" style="--i:3" aria-hidden="true"></span>
+                <p class="subtitulo entrada" style="--i:4">Angy Anahi</p>
+            </div>
+            <a class="desliza" href="#carta" aria-label="Seguir bajando">
+                <span>Desliza</span>
+                <i></i>
+            </a>
+        </header>
+
+        <!-- Carta -->
+        <section class="seccion" id="carta">
+            <div class="tarjeta tarjeta-intro revelar">
+                <p class="descripcion">
+                    Esta página web está diseñada y construida exclusivamente para ti,
+                    un espacio único que te pertenece por completo para que hagas con él lo que desees.
+                    Eres libre de explorar, cambiar o pedirme que agreguemos cualquier detalle que pase por tu mente; al final,
+                    el único límite aquí será tu imaginación y lo que mi conocimiento me permita crear para hacerte sonreír.
+                </p>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- I -->
+        <section class="seccion bloque" id="gracias">
+            <div class="encabezado revelar">
+                <span class="numero">I</span>
+                <h2 class="titulo-seccion">Simplemente, gracias.</h2>
+            </div>
+
+            <div class="marco revelar zoom">
+                <div class="foto carrusel" data-intervalo="4600">
+                    <div class="diapositivas">
+                        <img class="slide activa" src="img/foto-1.jpg" alt="Angy sonriendo con lentes en el salón" style="object-position:50% 60%">
+                        <img class="slide" src="img/foto-2.jpg" alt="Angy con un filtro divertido" loading="lazy" style="object-position:50% 35%">
+                        <img class="slide" src="img/foto-3.jpg" alt="Angy con sus compañeras en una actividad" loading="lazy" style="object-position:70% 75%">
+                        <img class="slide" src="img/foto-4.jpg" alt="Momento en un evento escolar" loading="lazy">
+                    </div>
+                    <div class="puntos" role="tablist" aria-label="Fotos"></div>
+                </div>
+            </div>
+
+            <div class="tarjeta revelar">
+                <p class="mensaje inicial">
+                    Lo primero que quiero decir es que estoy agradecido de haber conocido a una persona tan maravillosa como tú.
+                    Es impresionante: nunca me voy a arrepentir de haber mandado aquel mensaje.
+                    Quién diría que por un simple saludo terminaría cayendo tan locamente enamorado, de una manera incomprensible.
+                    Así que, principalmente, le doy
+                </p>
+                <p class="mensaje destacado">
+                    gracias a Dios por cruzar nuestros destinos; luego a tus padres, por concebir a la persona que amo;
+                    y por último, a la persona más importante: a ti, por darme el honor de estar en tu vida.
+                </p>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- II -->
+        <section class="seccion bloque" id="fascina">
+            <div class="encabezado revelar">
+                <span class="numero">II</span>
+                <h2 class="titulo-seccion">Lo que me fascina de ti</h2>
+            </div>
+
+            <div class="marco revelar zoom">
+                <div class="foto carrusel" data-intervalo="4200">
+                    <div class="diapositivas">
+                        <img class="slide activa" src="img/foto-5.jpg" alt="Angy con un filtro de bigote" loading="lazy">
+                        <img class="slide" src="img/foto-7.jpg" alt="Angy con lentes de sol" loading="lazy">
+                        <img class="slide" src="img/foto-6.jpg" alt="Angy con una expresión divertida" loading="lazy">
+                        <video class="slide slide-video" muted loop playsinline preload="metadata" poster="img/foto-5.jpg">
+                            <source src="video/video-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="puntos" role="tablist" aria-label="Fotos y video"></div>
+                </div>
+            </div>
+
+            <div class="tarjeta revelar">
+                <p class="mensaje inicial">
+                    Hace tiempo me dijiste que conmigo puedes ser tú misma,
+                    y no sabes cuánto me honra que sientas eso, porque para mí eres fascinante.
+                    Cada video, foto o audio que me mandas es increíble; te has convertido en la llama que enciende mi corazón.
+                    Nunca te arrepientes de ser como eres, porque eres una persona maravillosa.
+                </p>
+                <p class="mensaje">
+                    Me encanta tu actitud y tus ocurrencias... como aquella vez que me dijiste que yo estaba en el futuro y tú en el pasado solo porque estamos en zonas horarias diferentes.
+                    Me fascinó ese comentario porque, si lo piensas, ¡tiene todo el sentido del mundo!
+                    Creo que no te lo había dicho, pero tengo un nuevo video favorito tuyo: ese donde sales cantando 'Happy Happy'.
+                    Solo por ti fui a escuchar la canción otra vez, y la verdad me identifico demasiado con la letra.
+                </p>
+
+                <!--
+                    Aquí iba la parte de la letra de la canción. La dejé fuera porque es contenido con derechos de autor.
+                    Si quieres ponerla tú, quita las marcas de comentario de este bloque y pega la letra dentro:
+
+                <blockquote class="cita">
+                    <span>PEGA AQUÍ LA LETRA</span>
+                </blockquote>
+                -->
+
+                <p class="mensaje destacado">
+                    En conclusión: el día que alguien te diga algo por cómo actúas o por tus ocurrencias, no le hagas ni caso. Para mí,
+                    esa espontaneidad es una de las partes más bellas que tienes.
+                </p>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- III -->
+        <section class="seccion bloque" id="detalles">
+            <div class="encabezado revelar">
+                <span class="numero">III</span>
+                <h2 class="titulo-seccion">Los detalles invisibles</h2>
+            </div>
+
+            <div class="tarjeta revelar">
+                <p class="mensaje inicial">
+                    Hay cosas de ti que tal vez ni tú misma notas, pero que a mí me encantan. Tu forma de reírte cuando te da pena, cómo te apasionas cuando me cuentas algo que te gusta,
+                </p>
+                <p class="mensaje destacado">
+                    o la manera en que cambias el tono de voz en los audios.
+                    Son esos detalles invisibles los que hacen que hablar contigo sea mi parte favorita del día. No necesito que sea una cita especial ni una fecha importante; cualquier conversación contigo se convierte en mi momento preferido.
+                    Y aún más cuando se trata de cosas random o espontáneas... Te amo.
+                </p>
+            </div>
+
+            <div class="audios revelar">
+                <p class="subtitulo-seccion">Tu voz, mi parte favorita</p>
+
+                <div class="audio-card">
+                    <audio preload="metadata">
+                        <source src="audio/audio-1.m4a" type="audio/mp4">
+                        <source src="audio/audio-1.ogg" type="audio/ogg">
+                    </audio>
+                    <button class="play" type="button" aria-label="Reproducir audio 1"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></button>
+                    <div class="audio-info">
+                        <span class="audio-nombre">Tu audio · 31 de octubre</span>
+                        <div class="barra"><span class="relleno"></span></div>
+                    </div>
+                    <span class="tiempo">0:00</span>
+                </div>
+
+                <div class="audio-card">
+                    <audio preload="metadata">
+                        <source src="audio/audio-2.m4a" type="audio/mp4">
+                        <source src="audio/audio-2.ogg" type="audio/ogg">
+                    </audio>
+                    <button class="play" type="button" aria-label="Reproducir audio 2"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></button>
+                    <div class="audio-info">
+                        <span class="audio-nombre">Tu audio · 2 de noviembre</span>
+                        <div class="barra"><span class="relleno"></span></div>
+                    </div>
+                    <span class="tiempo">0:00</span>
+                </div>
+
+                <div class="audio-card">
+                    <audio preload="metadata">
+                        <source src="audio/audio-3.m4a" type="audio/mp4">
+                        <source src="audio/audio-3.ogg" type="audio/ogg">
+                    </audio>
+                    <button class="play" type="button" aria-label="Reproducir audio 3"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></button>
+                    <div class="audio-info">
+                        <span class="audio-nombre">Tu audio · 3 de noviembre</span>
+                        <div class="barra"><span class="relleno"></span></div>
+                    </div>
+                    <span class="tiempo">0:00</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- IV · Mi lugar seguro -->
+        <section class="seccion bloque" id="lugar-seguro">
+            <div class="encabezado revelar">
+                <span class="numero">IV</span>
+                <h2 class="titulo-seccion">Mi lugar seguro</h2>
+            </div>
+
+            <div class="tarjeta revelar">
+                <p class="mensaje inicial">
+                    Si tuviera que resumir lo que me pasa contigo, diría que me das una paz increíble y, al mismo tiempo, una emoción enorme cada vez que veo una notificación tuya.
+                </p>
+                <p class="mensaje destacado">
+                    Te has convertido en esa persona con la que quiero compartirlo todo: mis días buenos, mis días raros, mis pensamientos y, por supuesto, la música que me recuerda a ti...
+                </p>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- V · Música -->
+        <section class="seccion bloque" id="musica">
+            <div class="encabezado revelar">
+                <span class="numero">V</span>
+                <h2 class="titulo-seccion">Canciones para ti</h2>
+                <p class="intro-seccion">Las canciones que te he dedicado. Toca cualquiera para escucharla en Spotify.</p>
+            </div>
+
+            <ul class="canciones">
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/35LdDKNMwvKftENaj1WIwF" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e32b600cf149063d811341e3" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Enamorado tuyo</strong><em>El Cuarteto De Nos</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/1G9wM0DIuyxn0m0QeENIkl" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2737e709ce66e549bae1f3983ce" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Química Mayor</strong><em>Mon Laferte</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/2dvTutCISmanWOYdFMfqKo" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273dbbbb85c5d7723f8aba643e9" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Cicada</strong><em>Good Kid</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/65mQeg46PBoOzslgpynyzF" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735eebf3f8ec6e9807105f3151" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>El Diablo</strong><em>Mon Laferte</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/22seP38foydqUMp5Fvkcjm" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d6cfdde09715f80ddf68ec52" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Inolvidable</strong><em>Reik</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/0bJqoSq8trfzfrC0AnG6BJ" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273adb5f1c1c6ee3a2cb24c991b" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Reino De Amor</strong><em>Mon Laferte</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/6kdCN6gTWLcLxmLXoUcwuI" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273624927252564ef4625307897" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Eres</strong><em>Café Tacvba</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/3ydweVPwq9PCEVJ8WwqT6u" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27362d6b9c62691db6f63608eac" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Loco (Tu Forma De Ser)</strong><em>Los Auténticos Decadentes</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/3GSMdtJphymHEsR8K9jT5Q" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732a05b124cd97397315615e22" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Locos</strong><em>León Larregui</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/0SRddBTphQwQcfqw4Br1uX" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735be353af3e7d01599fbbda14" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Brillas</strong><em>León Larregui</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+                <li class="revelar">
+                    <a class="cancion" href="https://open.spotify.com/track/05neYxc9nmlxJ7uTOZPlnq" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735be353af3e7d01599fbbda14" alt="" loading="lazy" referrerpolicy="no-referrer">
+                        <span class="cancion-info"><strong>Como Tú (Magic Music Box)</strong><em>León Larregui</em></span>
+                        <svg class="cancion-icono" viewBox="0 0 24 24" aria-label="Abrir en Spotify"><use href="#i-spotify"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- VI · Cerca -->
+        <section class="seccion bloque" id="cerca">
+            <div class="encabezado revelar">
+                <span class="numero">VI</span>
+                <h2 class="titulo-seccion">Cerca, sin importar los kilómetros</h2>
+            </div>
+
+            <div class="tarjeta revelar">
+                <p class="mensaje inicial">
+                    A veces me detengo a pensar en los kilómetros que nos separan o en el reloj, pero la verdad es que nunca me he sentido lejos de ti. Contigo aprendí que la distancia se reduce a nada cuando alguien está metido en tus pensamientos todo el día.
+                </p>
+                <p class="mensaje destacado">
+                    Da igual si estamos en horas distintas o en lugares diferentes: cada mensaje tuyo acorta cualquier mapa. Estás aquí, presente en mi día a día, más cerca de lo que te imaginas.
+                </p>
+            </div>
+        </section>
+
+        <div class="separador revelar" aria-hidden="true"><span></span><i></i><span></span></div>
+
+        <!-- VII · Galería -->
+        <section class="seccion bloque" id="galeria">
+            <div class="encabezado revelar">
+                <span class="numero">VII</span>
+                <h2 class="titulo-seccion">Pedacitos de ti</h2>
+                <p class="intro-seccion">Algunas de mis fotos favoritas tuyas. Toca cualquiera para verla en grande.</p>
+            </div>
+
+            <ul class="galeria" id="galeria-lista">
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="0" aria-label="Ver foto 1 en grande">
+                        <img src="img/galeria/t-01.jpg" width="520" height="288" alt="Foto de Angy 1" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="1" aria-label="Ver foto 2 en grande">
+                        <img src="img/galeria/t-02.jpg" width="390" height="520" alt="Foto de Angy 2" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="2" aria-label="Ver foto 3 en grande">
+                        <img src="img/galeria/t-03.jpg" width="520" height="520" alt="Foto de Angy 3" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="3" aria-label="Ver foto 4 en grande">
+                        <img src="img/galeria/t-04.jpg" width="520" height="390" alt="Foto de Angy 4" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="4" aria-label="Ver foto 5 en grande">
+                        <img src="img/galeria/t-05.jpg" width="520" height="390" alt="Foto de Angy 5" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="5" aria-label="Ver foto 6 en grande">
+                        <img src="img/galeria/t-06.jpg" width="520" height="389" alt="Foto de Angy 6" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="6" aria-label="Ver foto 7 en grande">
+                        <img src="img/galeria/t-07.jpg" width="390" height="520" alt="Foto de Angy 7" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="7" aria-label="Ver foto 8 en grande">
+                        <img src="img/galeria/t-08.jpg" width="403" height="520" alt="Foto de Angy 8" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="8" aria-label="Ver foto 9 en grande">
+                        <img src="img/galeria/t-09.jpg" width="390" height="520" alt="Foto de Angy 9" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="9" aria-label="Ver foto 10 en grande">
+                        <img src="img/galeria/t-10.jpg" width="520" height="512" alt="Foto de Angy 10" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="10" aria-label="Ver foto 11 en grande">
+                        <img src="img/galeria/t-11.jpg" width="292" height="520" alt="Foto de Angy 11" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="11" aria-label="Ver foto 12 en grande">
+                        <img src="img/galeria/t-12.jpg" width="228" height="520" alt="Foto de Angy 12" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="12" aria-label="Ver foto 13 en grande">
+                        <img src="img/galeria/t-13.jpg" width="390" height="520" alt="Foto de Angy 13" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="13" aria-label="Ver foto 14 en grande">
+                        <img src="img/galeria/t-14.jpg" width="407" height="520" alt="Foto de Angy 14" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="14" aria-label="Ver foto 15 en grande">
+                        <img src="img/galeria/t-15.jpg" width="390" height="520" alt="Foto de Angy 15" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="15" aria-label="Ver foto 16 en grande">
+                        <img src="img/galeria/t-16.jpg" width="292" height="520" alt="Foto de Angy 16" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="16" aria-label="Ver foto 17 en grande">
+                        <img src="img/galeria/t-17.jpg" width="390" height="520" alt="Foto de Angy 17" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="17" aria-label="Ver foto 18 en grande">
+                        <img src="img/galeria/t-18.jpg" width="520" height="390" alt="Foto de Angy 18" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="18" aria-label="Ver foto 19 en grande">
+                        <img src="img/galeria/t-19.jpg" width="390" height="520" alt="Foto de Angy 19" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="19" aria-label="Ver foto 20 en grande">
+                        <img src="img/galeria/t-20.jpg" width="392" height="520" alt="Foto de Angy 20" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="20" aria-label="Ver foto 21 en grande">
+                        <img src="img/galeria/t-21.jpg" width="390" height="520" alt="Foto de Angy 21" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="21" aria-label="Ver foto 22 en grande">
+                        <img src="img/galeria/t-22.jpg" width="497" height="520" alt="Foto de Angy 22" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="22" aria-label="Ver foto 23 en grande">
+                        <img src="img/galeria/t-23.jpg" width="520" height="379" alt="Foto de Angy 23" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="23" aria-label="Ver foto 24 en grande">
+                        <img src="img/galeria/t-24.jpg" width="292" height="520" alt="Foto de Angy 24" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="24" aria-label="Ver foto 25 en grande">
+                        <img src="img/galeria/t-25.jpg" width="390" height="520" alt="Foto de Angy 25" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="25" aria-label="Ver foto 26 en grande">
+                        <img src="img/galeria/t-26.jpg" width="388" height="520" alt="Foto de Angy 26" loading="lazy" decoding="async">
+                    </button>
+                </li>
+                <li class="revelar">
+                    <button class="gal-item" type="button" data-i="26" aria-label="Ver foto 27 en grande">
+                        <img src="img/galeria/t-27.jpg" width="520" height="398" alt="Foto de Angy 27" loading="lazy" decoding="async">
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Cierre -->
+        <footer class="cierre">
+            <div class="cierre-texto revelar">
+                <span class="linea-oro" aria-hidden="true"></span>
+                <p class="cierre-titulo">Te amo, Angy</p>
+                <p class="cierre-pie">Hecho con cariño, solo para ti.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Visor de fotos -->
+    <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Visor de fotos" hidden>
+        <button class="visor-cerrar" type="button" aria-label="Cerrar">&times;</button>
+        <button class="visor-nav visor-ant" type="button" aria-label="Foto anterior">&#8249;</button>
+        <figure class="visor-fig"><img id="visor-img" alt=""></figure>
+        <button class="visor-nav visor-sig" type="button" aria-label="Foto siguiente">&#8250;</button>
+        <p class="visor-cuenta" id="visor-cuenta" aria-live="polite"></p>
+    </div>
+
+    <script src="js/animacion.js" defer></script>
+</body>
+</html>
